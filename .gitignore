@@ -1,0 +1,5 @@
+.vscode/
+build/
+node_modules/
+test/integration/files/actual/
+npm-debug.log
