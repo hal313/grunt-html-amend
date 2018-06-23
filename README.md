@@ -30,7 +30,7 @@ grunt.loadNpmTasks('grunt-html-amend');
 ### Overview
 In your project's Gruntfile, add a section named `htmlAmend` to the data object passed into `grunt.initConfig()`.
 
-**NOTE:** Nearly all options may be specified as functions which return a valid option. For example, the `content` option may be either a string or a function which results in a string. If the result of the function is another function, that new function will be executed. There is no limit to the number of functions which may be run, however system limitations and Grunt will certainly impose limits.
+**NOTE:** Nearly all options may be specified as functions which return a valid option. For example, the `content` option may be either a string or a function which returns a string. If the result of the function is another function, that new function will be executed. There is no limit to the number of functions which may be run, however system limitations and Grunt will certainly impose limits.
 
 ```js
 grunt.initConfig({
