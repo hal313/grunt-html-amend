@@ -1,0 +1,77 @@
+{
+  "name": "grunt-html-amend",
+  "version": "1.0.0",
+  "description": "Amends HTML by inserting attributes into elements, or elements into the DOM.",
+  "homepage": "https://github.com/hal313/grunt-html-amend",
+  "bugs": {
+    "url": "https://github.com/hal313/grunt-html-amend/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hal313/grunt-html-amend.git"
+  },
+  "scripts": {
+    "build": "grunt clean && grunt build",
+    "test": "grunt clean && jest",
+    "test:watch": "grunt clean && jest --watch"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "build/reports",
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 90,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "collectCoverageFrom": [
+      "tasks/**/*.js",
+      "util/**/*.js"
+    ],
+    "roots": [
+      "tasks",
+      "util",
+      "test/integration/specs",
+      "test/integration/util"
+    ],
+    "resetModules": true
+  },
+  "auto-changelog": {
+    "unreleased": false,
+    "commitLimit": false
+  },
+  "keywords": [
+    "html",
+    "insert",
+    "replace",
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks/**/*",
+    "test/integration/files/expected/**/*",
+    "test/integration/files/source/**/*",
+    "test/integration/tests/**/*",
+    "util/**/*",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "CHANGELOG.md",
+    "Gruntfile.js",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md"
+  ],
+  "devDependencies": {
+    "auto-changelog": "^1.7.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-jshint": "^1.1.0"
+  },
+  "dependencies": {
+    "@hal313/html-amend": "^1.0.3"
+  }
+}
